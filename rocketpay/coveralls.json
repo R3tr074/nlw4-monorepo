@@ -1,0 +1,12 @@
+{
+  "skip_files": [
+    "test/",
+    "lib/rocketpay_web/channels/user_socket.ex",
+    "lib/rocketpay_web/endpoint.ex",
+    "lib/rocketpay_web/gettext.ex",
+    "lib/rocketpay_web/telemetry.ex"
+  ],
+  "coverage_options": {
+    "treat_no_relevant_lines_as_covered": true
+  }
+}
