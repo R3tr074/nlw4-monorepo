@@ -9,6 +9,7 @@ interface CountdownContextData {
   totalTime: number;
   startCountdown: () => void;
   resetCountdown: () => void;
+  time: number;
 }
 
 export const CountdownContext = createContext({} as CountdownContextData);
@@ -56,6 +57,7 @@ export const CountdownProvider: React.FC = ({ children }) => {
         startCountdown,
         resetCountdown,
         totalTime,
+        time,
       }}
     >
       {children}

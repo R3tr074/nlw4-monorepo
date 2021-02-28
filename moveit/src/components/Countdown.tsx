@@ -12,12 +12,13 @@ export const Countdown: React.FC = () => {
     resetCountdown,
     startCountdown,
     totalTime,
+    time,
   } = useContext(CountdownContext);
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split("");
   const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
 
-  const percentProgress = 100 - (seconds * 100) / totalTime;
+  const percentProgress = 100 - Math.round(time * 100) / totalTime;
 
   return (
     <div>
